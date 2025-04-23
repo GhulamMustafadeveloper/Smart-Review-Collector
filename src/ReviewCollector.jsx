@@ -66,7 +66,7 @@ export default function ReviewCollector() {
   const sendSignInLink = async () => {
     try {
       const actionCodeSettings = {
-        url: window.location.href,
+        url: 'https://smartreviewcollector.vercel.app',
         handleCodeInApp: true,
       };
       await sendSignInLinkToEmail(auth, email, actionCodeSettings);
